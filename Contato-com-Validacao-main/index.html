@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Fregni">
+    <meta name="description" content="Página de cadastros de contato">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="contato, cadastro, CRUD, agenda">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icone.ico" type="image/x-icon">
+    <title>Agenda de contatos</title>
+</head>
+
+<body>
+    <section id="contato" class="contato"> <!--Formulário de contato-->
+        <h1 class="formTitle">Entre em contato comigo!</h1>
+        <form action="https://formsubmit.co/b003ef1941632e1e6bdd89fac9b03d1e" method="post">
+           
+            <div class="campo">
+            <label for="nome"><strong>Nome:</strong></label>
+            <input type="text" name="name" placeholder="Nome completo" autocomplete="off" id="nome" required/>
+            </div>
+      
+            <div class="campo">
+            <label for="email"><strong>E-mail:</strong></label>
+            <input type="email" name="email" placeholder="E-mail" autocomplete="off" id="email" required/>
+            </div>
+      
+            <div class="campo">
+            <label for="tel"><strong>Telefone:</strong></label>
+            <input type="tel" name="Telefone" placeholder="Telefone" autocomplete="off" id="tel" required/>
+            </div>
+      
+            <div class="campo">
+            <label for="subject"><strong>Assunto:</strong></label>
+            <input type="text" name="subject" placeholder="Assunto" autocomplete="off" id="assunto"/>
+            </div>
+            
+      
+            <label for="message" class="campo" name="email"><strong>Mensagem</strong></label>
+            <textarea id="myTextarea" placeholder="Digite sua mensagem aqui" name="email"></textarea>
+            <span id="character-count">Caracteres restantes: 512</span>
+            <script src="js/scriptCounterResize.js"></script>
+            <div>
+            <button id="btn-submit" class="btn-submit" type="submit" name="email">Enviar</button>
+            </div>
+        </form>
+      </section>
+</body>
+<footer>&copy;2024 Victor Fregni - Todos os direitos reservados
+</footer>
+</html>

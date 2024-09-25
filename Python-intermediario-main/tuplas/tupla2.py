@@ -1,0 +1,6 @@
+minhaTupla = ("computador", "celular", "relógio","computador", "televisão")
+print(minhaTupla)
+print(len(minhaTupla))
+minhaTupla = ("")
+print(minhaTupla)
+print(len(minhaTupla))

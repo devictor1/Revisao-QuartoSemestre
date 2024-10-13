@@ -3,7 +3,7 @@ const counter = document.getElementById('character-count');
 const submitButton = document.getElementById('btn-submit');
 
   textarea.addEventListener('input', updateCharacterCount);
-  textarea.addEventListener('input', resizeTextarea);
+  textarea.addEventListener('input', autoResizeTextarea);
 
   function updateCharacterCount() {
     const maxCharacters = 512;
@@ -19,7 +19,7 @@ const submitButton = document.getElementById('btn-submit');
     console.log;
   }
 
-  function resizeTextarea() {
+  function autoResizeTextarea() {
     textarea.style.height = 'auto';
     textarea.style.height = textarea.scrollHeight + 'px';
   }
